@@ -31,7 +31,7 @@ public class PersonIOService {
         }
     }
 
-    public void readJson(){
+    public Person readJson(){
         String fileRead = "", line;
         try{
             fileReader = new FileReader(PATH_NAME);
@@ -45,5 +45,6 @@ public class PersonIOService {
         } catch (IOException e) {
             System.out.println("error al leer el archivo");
         }
+        return person;
     }
 }
